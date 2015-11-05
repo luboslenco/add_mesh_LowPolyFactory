@@ -79,12 +79,13 @@ footer {
 }
 
 .content {
-  float: left;
+  /*float: left;*/
+  float: center;
   /*width: 57.5%;*/
   width: 80%;
-  max-width: 690px;
+  /*max-width: 690px;*/
   height: 763px;
-  margin-left: 25.5%;
+  /*margin-left: 25.5%;*/
 }
 
 .primary-nav {
