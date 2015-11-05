@@ -80,7 +80,8 @@ footer {
 
 .content {
   float: left;
-  width: 57.5%;
+  /*width: 57.5%;*/
+  width: 80%;
   max-width: 690px;
   height: 763px;
   margin-left: 25.5%;
