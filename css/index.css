@@ -89,9 +89,11 @@ footer {
 .primary-nav {
   position: fixed;
   top: 170px;
-  left: 8.5%;
+  /*left: 8.5%;*/
+  left: 0%;
   z-index: 7;
-  width: 15%;
+  /*width: 15%;*/
+  width: 0%;
   font-size: 1em;
   color: rgb(141, 141, 141);
 }
