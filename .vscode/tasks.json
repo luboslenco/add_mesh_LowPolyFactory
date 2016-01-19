@@ -1,0 +1,6 @@
+{
+    "version": "0.1.0",
+    "command": "marked",
+    "isShellCommand": true,
+    "args": ["docs.md", "-o", "index.html"]
+}

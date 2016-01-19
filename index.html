@@ -1,35 +1,91 @@
 <!doctype html>
-<html>
+
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1.0">
+
   <title>LowPoly Factory</title>
-  <link rel="stylesheet" href="css/standardize.css">
-  <link rel="stylesheet" href="css/index.css">
-  <script type="text/javascript" src="http://use.typekit.net/vsp8met.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
+
 <body>
-
-  <a class="home" href="http://lowpolyfactory.com"><img src="images/icon.png" class="logo"></a>
-  <a href="#" class="hamburger"><img src="images/hamburger.png"></a>
-
-  <nav class="primary-nav">
-	<!--<a href="#home">Home</a> -->
-  </nav>
-
-  <article class="content">
-	
-  <section id="home">
-	  <!--<h1>Home</h1>-->
-	  <img src="images/lpf.jpg"/>
-	
-  </section>
-
-	<!--<footer><a href="https://github.com/luboslenco/lue">Lue</a></footer>-->
-  </article>
-
-  <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
+<h1 id="low-poly-factory">Low Poly Factory</h1>
+<h2 id="intro">Intro</h2>
+<p>Low Poly Factory(LPF) is a procedural content generation tool in a form of Blender add-on, specialized in lowpoly landscapes.</p>
+<p>The idea is to easily generate the scene and then tweak parameters/materials and do manual work to make end result original. Each object that LPF generates is unique, but still based on parameters the user specifies.</p>
+<p>LPF is a perfect tool to assist you in productive low-poly modeling, usable for renders, animations or game-ready models. There is an option to bake materials to vertex colors, which makes it easy to import models to your 3D game engine of choice. Low-poly models are also suitable for virtual/augmented reality development.</p>
+<h2 id="showcase">Showcase</h2>
+<p><img src="images/render1.jpg" alt="">
+Check out renders from LPS development here:
+<a href="http://lowpolyfactory.tumblr.com">http://lowpolyfactory.tumblr.com</a></p>
+<h2 id="download">Download</h2>
+<p>Add-on download will be available shortly!</p>
+<h2 id="guide">Guide</h2>
+<h3 id="instalation">Instalation</h3>
+<p>Select &#39;File&#39;-&gt;&#39;User Preferences...&#39;-&gt;&#39;Add-ons&#39;, hit &#39;Install from File...&#39; and locate downloaded &#39;add_mesh_LowPolyFactory.zip&#39; file. Check the mark to enable add-on. If you wish to run add-on every time you boot up Blender, hit &#39;Save User Settings&#39;.</p>
+<h3 id="quick-start">Quick Start</h3>
+<p>Let&#39;s start by showing a quickest way of generating a simple landscape:</p>
+<ul>
+<li>Boot up empty Blender scene</li>
+<li>Hit space and type &#39;Add Terrain&#39;</li>
+<li>While keeping terrain selected, hit space and type &#39;Populate&#39;</li>
+<li>Hit space again and type &#39;Set Lights&#39;</li>
+<li>If you are in perspective mode, press &#39;View&#39;-&gt;&#39;View Persp/Ortho&#39; to switch to orho view</li>
+<li>Press Shift+Z to render in viewport</li>
+<li>TA-DA! You will be presented with scene similar to this.</li>
+</ul>
+<p><img src="images/quickstart.jpg" alt=""></p>
+<p>If you got interested, follow the guide to learn more!</p>
+<h3 id="trees">Trees</h3>
+<p>A special focus is placed on trees, usually the most crucial part of scene. There are several types available, with separate trunk and top generation.</p>
+<h4 id="oak">Oak</h4>
+<p><img src="images/tree_oak1.jpg" alt=""></p>
+<p>Select &#39;Add&#39;-&gt;&#39;Mesh&#39;-&gt;&#39;Tree&#39; or hit space and type &#39;Add Tree&#39;. Hit T to open Tool Shelf so  we can adjust tree properties. Select &#39;Oak&#39; tree type.</p>
+<p>To edit trunk, select &#39;Trunk&#39; settings from Tool Shelf. You can specify segmnets(resolution), length and diameters of trunk.</p>
+<p>Note that you must provide minimum and maximum values for each parameter. When object is generated, random value is selected from the min-max range. This makes it easy to create hundreds of objects, each with varied look.</p>
+<p>To edit tree top, select &#39;Top&#39; settings from Tool Shelf. Specify subdivisions(resolution), scale and displace modifier parameters. You can experiment with these values to see what you can generate.</p>
+<p>Finally, you can check &#39;Keep Modifiers&#39; if you want to edit them further from Blender modifiers tab. Otherwise, the modifiers are applied to mesh.</p>
+<h4 id="pine">Pine</h4>
+<p><img src="images/tree_pine1.jpg" alt=""></p>
+<p>Generate tree object as described in Oak section, but select &#39;Pine&#39; tree type this time. Trunk parameters are shared with Oak, tree top is Pine specific.</p>
+<p>You can adjust number of stages and base stage size. To control the shrinking of next stages, adjust &#39;shrink size&#39; and &#39;shrink multiplier&#39;. &#39;Stage step&#39; value let&#39;s you modify space between individual stages. &#39;Stage segments&#39; controls the resolution of stage. &#39;Rotate stages&#39; let&#39;s you randomly rotate each stage.</p>
+<h4 id="palm">Palm</h4>
+<p><img src="images/tree_palm1.jpg" alt=""></p>
+<p>Generate tree object as described in Oak section, and select &#39;Palm&#39; tree type. Both trunk and top parameters are Palm specific.</p>
+<p>To create a nice looking palm trunk, stages are used. Adjust number of stages, segments(resolution), stage length and stage diameters to generate varied trunks.</p>
+<p>Switch to &#39;Top&#39; tree settings. Edit number of leaves, leaf length and size(width). Most importantly, don&#39;t forget to specify number of coconuts!</p>
+<h3 id="bushes">Bushes</h3>
+<p><img src="images/bush1.jpg" alt=""></p>
+<p>Select &#39;Add&#39;-&gt;&#39;Mesh&#39;-&gt;&#39;Bush&#39;. Bushes are the little blob things with no trunks(use tree type if you need them). They are used to add small details to the scene. Set subdivisons(resolution) and scale on each axis. You can also edit displace modifier settings.</p>
+<h3 id="rocks">Rocks</h3>
+<p><img src="images/rock1.jpg" alt=""></p>
+<p>Select &#39;Add&#39;-&gt;&#39;Mesh&#39;-&gt;&#39;Rock&#39;. Similar to bushes, subdivisions(resolution), scale on each axis and displace modifier can be set to generate varied types of rocks.</p>
+<h3 id="terrain">Terrain</h3>
+<p><img src="images/terrain1.jpg" alt=""></p>
+<p>Finally, we need a place to plant all this objects on. Select &#39;Add&#39;-&gt;&#39;Mesh&#39;-&gt;&#39;Terrain&#39;. Choose &#39;Plane&#39; type for classic landscape, or &#39;Sphere&#39; for planets. Select size and segments/subdivisions of terrain. &#39;Clouds&#39; and &#39;Voronoi&#39; displace methods are built in. Use displace strength to affect height of hills and displace scale to affect size of hills.</p>
+<p>To learn how to create different terrain biomes, see material tweaking section.</p>
+<h4 id="water">Water</h4>
+<p><img src="images/water1.jpg" alt=""></p>
+<p>Select &#39;Add&#39;-&gt;&#39;Mesh&#39;-&gt;&#39;Water&#39; to add water to terrain. Set type to &#39;Plane&#39; or &#39;Sphere&#39;. Enable displace to add waves or keep it off for still water.</p>
+<h4 id="grass">Grass</h4>
+<p><img src="images/grass1.jpg" alt=""></p>
+<p>Select &#39;Add&#39;-&gt;&#39;Mesh&#39;-&gt;&#39;Grass&#39;. The grass is generated blade by blade, to ensure uniqueness of each object. If you need to place lots of blades, use populate feature described below or Blender particle systems.</p>
+<p>For each blade, specify scale, length, grow scale and grow direction.</p>
+<h3 id="clouds">Clouds</h3>
+<p><img src="images/cloud1.jpg" alt=""></p>
+<p>Select &#39;Add&#39;-&gt;&#39;Mesh&#39;-&gt;&#39;Cloud&#39;. Set number of speheres to use and subdivisions(resolution) and scale of each sphere.</p>
+<h3 id="populate">Populate</h3>
+<p><img src="images/populate1.jpg" alt=""></p>
+<p>Populate feature allows to quickly generate large number of object instances. On the picture above, terrain is populated with 2500 trees, 250 bushes and 250 rocks. Objects are distributed on the terrain and planted at correct terrain heigh, thus making it possible to populate hilly or spherical terrains.</p>
+<p>Locate &#39;LowPoly Factory&#39; section in Render Panel, type amount of objects to be spawned, select object which you want to populate(usually terrain) and hit &#39;Populate&#39;.</p>
+<p>Populate feature uses the same parameters that are specified when creating objects manually. Select &#39;Merge&#39; option to group all created instances into one Blender object.</p>
+<p>Note: Based on your computer performance and number of objects being spawned, this can take a lot of time(up to several minutes).</p>
+<h3 id="tweaking-materials">Tweaking materials</h3>
+<p><img src="images/materials2.jpg" alt=""></p>
+<p>Node based cycles materials are used. Select object you want to edit and switch to node editor. By default, materials use simple color ramp, which slightly randomizes color for each material user.</p>
+<h3 id="light-setup">Light setup</h3>
+<p><img src="images/lights1.jpg" alt=""></p>
+<p>LPF comes with a nifty little tool to quickly set-up simple lighting in a scene. Locate &#39;LowPoly Factory&#39; section in Render Panel, select desired light type(dawn, midday, dusk, night) and hit &#39;Set Lights&#39;.</p>
 </body>
 </html>
