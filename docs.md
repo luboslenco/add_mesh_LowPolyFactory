@@ -123,10 +123,14 @@ Note: Based on your computer performance and number of objects being spawned, th
 
 ![](images/materials2.jpg)
 
-Node based cycles materials are used. Select object you want to edit and switch to node editor. By default, materials use simple color ramp, which slightly randomizes color for each material user.
+Node based cycles materials are used. Select object you want to edit and switch to node editor. By default, materials use simple color ramp, which slightly randomizes color for each material user. You can simply adjust the color ramp values or use a different material. Materials are shared for each object type.
 
 ### Light setup
 
 ![](images/lights1.jpg)
 
 LPF comes with a nifty little tool to quickly set-up simple lighting in a scene. Locate 'LowPoly Factory' section in Render Panel, select desired light type(dawn, midday, dusk, night) and hit 'Set Lights'.
+
+### Author
+
+A lot of effort was put into making this add-on, in a hope that you will enjoy using it! You can check out what I have been up to here: [@luboslenco](https://twitter.com/luboslenco)
