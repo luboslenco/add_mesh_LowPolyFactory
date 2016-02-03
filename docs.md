@@ -39,7 +39,7 @@ A special focus is placed on trees, usually the most crucial part of scene. Ther
 
 ![](images/tree_oak1.jpg)
 
-Select 'Add'->'Mesh'->'Tree' or hit space and type 'Add Tree'. Hit T to open Tool Shelf so  we can adjust tree properties. Select 'Oak' tree type.
+Select 'Add'->'Mesh'->'Low Poly'->'Low Poly'->'Tree' or hit space and type 'Add Tree'. Hit T to open Tool Shelf so  we can adjust tree properties. Select 'Oak' tree type.
 
 To edit trunk, select 'Trunk' settings from Tool Shelf. You can specify segmnets(resolution), length and diameters of trunk.
 
@@ -71,19 +71,19 @@ Switch to 'Top' tree settings. Edit number of leaves, leaf length and size(width
 
 ![](images/bush1.jpg)
 
-Select 'Add'->'Mesh'->'Bush'. Bushes are the little blob things with no trunks(use tree type if you need them). They are used to add small details to the scene. Set subdivisons(resolution) and scale on each axis. You can also edit displace modifier settings.
+Select 'Add'->'Mesh'->'Low Poly'->'Bush'. Bushes are the little blob things with no trunks(use tree type if you need them). They are used to add small details to the scene. Set subdivisons(resolution) and scale on each axis. You can also edit displace modifier settings.
 
 ### Rocks
 
 ![](images/rock1.jpg)
 
-Select 'Add'->'Mesh'->'Rock'. Similar to bushes, subdivisions(resolution), scale on each axis and displace modifier can be set to generate varied types of rocks.
+Select 'Add'->'Mesh'->'Low Poly'->'Rock'. Similar to bushes, subdivisions(resolution), scale on each axis and displace modifier can be set to generate varied types of rocks.
 
 ### Terrain
 
 ![](images/terrain1.jpg)
 
-Finally, we need a place to plant all this objects on. Select 'Add'->'Mesh'->'Terrain'. Choose 'Plane' type for classic landscape, or 'Sphere' for planets. Select size and segments/subdivisions of terrain. 'Clouds' and 'Voronoi' displace methods are built in. Use displace strength to affect height of hills and displace scale to affect size of hills.
+Finally, we need a place to plant all this objects on. Select 'Add'->'Mesh'->'Low Poly'->'Terrain'. Choose 'Plane' type for classic landscape, or 'Sphere' for planets. Select size and segments/subdivisions of terrain. 'Clouds' and 'Voronoi' displace methods are built in. Use displace strength to affect height of hills and displace scale to affect size of hills.
 
 To learn how to create different terrain biomes, see material tweaking section.
 
@@ -91,13 +91,13 @@ To learn how to create different terrain biomes, see material tweaking section.
 
 ![](images/water1.jpg)
 
-Select 'Add'->'Mesh'->'Water' to add water to terrain. Set type to 'Plane' or 'Sphere'. Enable displace to add waves or keep it off for still water.
+Select 'Add'->'Mesh'->'Low Poly'->'Water' to add water to terrain. Set type to 'Plane' or 'Sphere'. Enable displace to add waves or keep it off for still water.
 
 #### Grass
 
 ![](images/grass1.jpg)
 
-Select 'Add'->'Mesh'->'Grass'. The grass is generated blade by blade, to ensure uniqueness of each object. If you need to place lots of blades, use populate feature described below or Blender particle systems.
+Select 'Add'->'Mesh'->'Low Poly'->'Grass'. The grass is generated blade by blade, to ensure uniqueness of each object. If you need to place lots of blades, use populate feature described below or Blender particle systems.
 
 For each blade, specify scale, length, grow scale and grow direction.
 
@@ -105,7 +105,7 @@ For each blade, specify scale, length, grow scale and grow direction.
 
 ![](images/cloud1.jpg)
 
-Select 'Add'->'Mesh'->'Cloud'. Set number of speheres to use and subdivisions(resolution) and scale of each sphere.
+Select 'Add'->'Mesh'->'Low Poly'->'Cloud'. Set number of speheres to use and subdivisions(resolution) and scale of each sphere.
 
 ### Populate
 
